@@ -26,7 +26,7 @@ constructor()
 }
  async componentDidMount()
  {
-     let url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=4e546d7bc92042b584759632f817b28c`;
+     let url = `https://saurav.tech/NewsAPI/top-headlines/category/${this.props.category}/in.json`;
      let data = await fetch(url);
      let parseData = await data.json()
      console.log(data);
@@ -52,3 +52,4 @@ constructor()
 }
 
 export default news
+
